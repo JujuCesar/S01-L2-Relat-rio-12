@@ -1,0 +1,12 @@
+(defparameter myList (list 1 2 3))
+(defun transform-element (x)
+ 
+(if (>= x 4)
+      (* x 2)   ; Multiplica por 2
+      (/ x 2))) ; Divide por 2
+
+
+
+
+(print(mapcar #'transform-element myList))
+
