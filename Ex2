@@ -1,0 +1,15 @@
+(defparameter myList (list 1 2 3))
+(defparameter myList2 (list 4 5 6))
+(defun transform-element (x)
+ 
+(if (>= x 4)
+      (* x 2)   ; Multiplica por 2
+      (/ x 2))) ; Divide por 2
+
+
+;; Tranformanando e armazenando as listas
+(defparameter transformed-list1 (mapcar #'transform-element myList))
+(defparameter transformed-list2 (mapcar #'transform-element myList2))
+
+;; Combinando as listas com "append"
+(print(append transformed-list1 transformed-list2))
